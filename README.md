@@ -143,3 +143,41 @@ En caso de necesitar más información pueden visitar el paquete desde https://i
     </div>
 </div>
 ```
+
+```
+h4 {
+  margin: 10px 0;
+}
+
+.separator {
+  border-right: 1px solid var(--bs-gray-300);
+}
+
+.secondary {
+  color: var(--bs-gray-600);
+}
+
+i {
+  display: flex;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+i.rotate {
+  rotate: 180deg;
+}
+
+img {
+  width: 100%;
+}
+
+span p {
+  margin: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: center;
+}
+```
