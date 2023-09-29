@@ -6,7 +6,8 @@ El sistema contará con tres pasos para realizar el proceso de reserva de un vue
 
 El primer paso consta de listar los aviones en base al listado proporcionado en el servicio de vuelos que muestra:
 
-![image](https://github.com/fpiemontesi/utn-dabd-booking-process/assets/32469880/2548a97d-f100-4294-a9b6-ffebbe95672a)
+![image](https://github.com/forstarwars/booking-process/assets/146455539/6e4091f2-9733-44f5-9174-b97ef311e398)
+
 
     * Logo empresa
     * Ciudad destino
@@ -19,7 +20,8 @@ Aquí el usuario podrá seleccionar un vuelo lo cual lo llevará a la siguiente 
 
 ## Selección de Habitación
 
-![image](https://github.com/fpiemontesi/utn-dabd-booking-process/assets/32469880/e9bc6f84-7a23-4d15-91e2-2aae5a72c304)
+![image](https://github.com/forstarwars/booking-process/assets/146455539/ff1c0bb5-1074-4b48-8522-c34c0d953d69)
+
 
 - En esta sección podrá ver:
     * Foto
@@ -32,7 +34,7 @@ Dicha información debe ser obtenida desde el servicio de hoteles. Cada habitaci
 ## Checkout
 Una vez elegida la habitación el sistema debe mostrar el último paso para cargar la información donde se visualizará:
 
-![image](https://github.com/fpiemontesi/utn-dabd-booking-process/assets/32469880/a6ca23ac-ee77-47d4-82b9-8d28d614dc76)
+![image](https://github.com/forstarwars/booking-process/assets/146455539/dee531c3-f9c4-4c47-ab90-53963de7b055)
 
   * Resumen reserva:
     - Información vuelo:
@@ -73,3 +75,60 @@ Solo se debe mostrar un paso a la vez a medida que el usuario va seleccionando e
   - Utilizar comunicación entre componentes según lo requiera
   - Utilizar Template Driven Forms mostrando validaciones especificas en donde corresponda.
   - Utilizar bootstrap para el diseño propuesto
+
+## Snippet HTML Resumen Reserva:
+
+```
+  <div class="card my-3">
+    <h4>Booking detail</h4>
+    <div class="row my-3">
+        <div class="col-6 separator">
+            <h6>Your flight</h6>
+            <div class="row">
+                <div class="col-5">
+                    <img src="..." alt="..." />
+                </div>
+                <div class="col-7 d-flex">
+                    <ul class="list-group list-group-flush w-100">
+                        <li>
+                            <p><strong>Chicago to New York</strong></p>
+                        </li>
+                        <li>
+                            <p><span>2hs 40mins</span></p>
+                        </li>
+                        <li>
+                        <i class="bi bi-airplane"></i>
+                        <span>
+                            <p><strong>18:30</strong></p>
+                            <p class="secondary">Chicago</p>
+                        </span>
+                        <i class="bi bi-airplane rotate"></i>
+                        <span>
+                            <p><strong>21:10</strong></p>
+                            <p class="secondary">New York</p>
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+        <h6>Your room</h6>
+        <div class="row">
+            <div class="col-5">
+                <img src="..." alt="..." />
+            </div>
+            <div class="col-7">
+                <p><strong>AMERICAN</strong></p>
+                <p><strong>Single Room</strong></p>
+                <div class="d-flex">
+                    <div class="amenity">
+                    <i class="bi bi-tv"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+```
