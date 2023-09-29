@@ -76,6 +76,17 @@ Solo se debe mostrar un paso a la vez a medida que el usuario va seleccionando e
   - Utilizar Template Driven Forms mostrando validaciones especificas en donde corresponda.
   - Utilizar bootstrap para el diseño propuesto
 
+## Uso de iconos
+Para usar iconos se pueden instalar la siguiente libreria de bootstrap:
+
+**bootstrap-icons => version: 1.11.1**
+
+Recordar que deben referenciar el archivo CSS generado en el archivo **styles.css** de la siguiente forma:
+
+<code>@import "~bootstrap-icons/font/bootstrap-icons.css";</code>
+
+En caso de necesitar más información pueden visitar el paquete desde https://icons.getbootstrap.com/
+
 ## Snippet HTML Resumen Reserva:
 
 ```
